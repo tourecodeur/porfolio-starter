@@ -1,0 +1,64 @@
+.services{
+    padding: 0rem 3rem 0rem 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 9rem;
+    margin-top: 9rem;
+}
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.awesome>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.s-button{
+    width: 15em;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.cards{
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+.s-blur1{
+    top: 13rem;
+    left: -18rem;
+}
+.s-blur2{
+    top: 8rem;
+    left: 13rem;
+}
+@media screen and (max-width: 480px) {
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0rem;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .cards>*{
+        position: static;
+    }
+}
